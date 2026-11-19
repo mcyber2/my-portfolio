@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="About Me"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Photo -->
+        <ImageView
+            android:id="@+id/ivAboutPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/colorPrimary"
+            android:contentDescription="@string/cd_profile_photo"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <!-- Personal info table -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Name"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoName"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Date of Birth"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoDob"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Birthplace"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoBirthplace"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Gender"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoGender"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Nationality"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoNationality"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Phone"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoPhone"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Email"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoEmail"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="8dp">
+                <TextView
+                    android:text="Address"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvInfoAddress"
+                    android:text="—"
+                    android:textColor="?attr/colorOnSurface"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Biography -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Biography"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBiography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="—"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp" />
+
+        <!-- Career objective -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Career Objective"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCareerObjective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="—"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

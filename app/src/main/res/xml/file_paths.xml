@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="cv_pdfs" path="cv/" />
+    <cache-path name="cv_cache" path="cv/" />
+</paths>

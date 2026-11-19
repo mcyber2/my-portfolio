@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mohammedportfolio.ui.home.HomeFragment"
+        android:label="Home">
+        <action android:id="@+id/action_home_to_education" app:destination="@id/educationFragment" />
+        <action android:id="@+id/action_home_to_skills" app:destination="@id/skillsFragment" />
+        <action android:id="@+id/action_home_to_experience" app:destination="@id/experienceFragment" />
+        <action android:id="@+id/action_home_to_certificates" app:destination="@id/certificatesFragment" />
+        <action android:id="@+id/action_home_to_interests" app:destination="@id/interestsFragment" />
+        <action android:id="@+id/action_home_to_teachers" app:destination="@id/teachersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.mohammedportfolio.ui.about.AboutFragment"
+        android:label="About" />
+
+    <fragment
+        android:id="@+id/projectsFragment"
+        android:name="com.example.mohammedportfolio.ui.projects.ProjectsFragment"
+        android:label="Projects" />
+
+    <fragment
+        android:id="@+id/cvFragment"
+        android:name="com.example.mohammedportfolio.ui.cv.CvFragment"
+        android:label="CV" />
+
+    <fragment
+        android:id="@+id/hireMeFragment"
+        android:name="com.example.mohammedportfolio.ui.hireme.HireMeFragment"
+        android:label="Contact Me" />
+
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="com.example.mohammedportfolio.ui.education.EducationFragment"
+        android:label="Education" />
+
+    <fragment
+        android:id="@+id/skillsFragment"
+        android:name="com.example.mohammedportfolio.ui.skills.SkillsFragment"
+        android:label="Skills" />
+
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="com.example.mohammedportfolio.ui.experience.ExperienceFragment"
+        android:label="Experience" />
+
+    <fragment
+        android:id="@+id/certificatesFragment"
+        android:name="com.example.mohammedportfolio.ui.certificates.CertificatesFragment"
+        android:label="Certificates" />
+
+    <fragment
+        android:id="@+id/interestsFragment"
+        android:name="com.example.mohammedportfolio.ui.interests.InterestsFragment"
+        android:label="Interests" />
+
+    <fragment
+        android:id="@+id/teachersFragment"
+        android:name="com.example.mohammedportfolio.ui.teachers.TeachersFragment"
+        android:label="Favorite Teachers" />
+</navigation>

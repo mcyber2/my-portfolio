@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Light) -->
+    <style name="Theme.MohammedPortfolio" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/teal_container</item>
+        <item name="colorOnPrimaryContainer">@color/teal_primary_dark</item>
+
+        <!-- Secondary / accent -->
+        <item name="colorSecondary">@color/teal_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Backgrounds & surfaces -->
+        <item name="android:colorBackground">@color/bg_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+        <item name="colorSurfaceVariant">@color/bg_light</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary_light</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/error</item>
+
+        <!-- Status bar / navigation bar -->
+        <item name="android:statusBarColor">@color/teal_primary_dark</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Text appearance defaults -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+    </style>
+
+    <!-- Card style used app-wide -->
+    <style name="Widget.MohammedPortfolio.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">@dimen/radius_m</item>
+        <item name="cardElevation">@dimen/elevation_card</item>
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+    </style>
+
+    <!-- Primary button style -->
+    <style name="Widget.MohammedPortfolio.Button" parent="Widget.Material3.Button">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_s</item>
+    </style>
+
+    <!-- Outlined button style -->
+    <style name="Widget.MohammedPortfolio.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="cornerRadius">@dimen/radius_s</item>
+        <item name="strokeColor">@color/teal_primary</item>
+        <item name="android:textColor">@color/teal_primary</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/aboutFragment"
+        android:icon="@drawable/ic_person"
+        android:title="@string/nav_about" />
+    <item
+        android:id="@+id/projectsFragment"
+        android:icon="@drawable/ic_work"
+        android:title="@string/nav_projects" />
+    <item
+        android:id="@+id/cvFragment"
+        android:icon="@drawable/ic_description"
+        android:title="@string/nav_cv" />
+    <item
+        android:id="@+id/hireMeFragment"
+        android:icon="@drawable/ic_email"
+        android:title="@string/nav_hire_me" />
+</menu>
